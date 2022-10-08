@@ -138,7 +138,7 @@ interface GetPostAndMorePosts {
 }
 
 export async function getPostAndMorePosts(
-  slug: string,
+  slug: string | string[],
   preview: boolean,
   previewData
 ): Promise<GetPostAndMorePosts> {
