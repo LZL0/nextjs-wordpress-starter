@@ -11,7 +11,7 @@ import { CMS_NAME } from "@/lib/constants";
 import { Post } from "@/lib/types";
 
 interface Index {
-  post: Post[];
+  posts: Post[];
   preview: boolean;
 }
 
