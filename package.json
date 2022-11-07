@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@apollo/client": "3.7.1",
-    "@headlessui/react": "1.7.3",
+    "@headlessui/react": "1.7.4",
     "@next/bundle-analyzer": "12.3.1",
     "@types/node": "18.11.9",
     "@types/react": "18.0.21",
