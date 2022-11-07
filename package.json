@@ -11,7 +11,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@apollo/client": "3.7.0",
+    "@apollo/client": "3.7.1",
     "@headlessui/react": "1.7.3",
     "@next/bundle-analyzer": "12.3.1",
     "@types/node": "18.11.9",
