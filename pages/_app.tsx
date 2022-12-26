@@ -1,14 +1,21 @@
-import { AppProps } from "next/app";
-import { ApolloProvider } from "@apollo/client";
-import apollo from "@/lib/apollo";
+import React from 'react';
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
 import "@/styles/tailwind.scss";
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }): JSX.Element {
+  const [queryClient] = React.useState(() => new QueryClient());
+
   return (
     <>
-      <ApolloProvider client={apollo}>
-        <Component {...pageProps} />
-      </ApolloProvider>
+      <QueryClientProvider client={queryClient}>
+        <Hydrate state={pageProps.dehydratedState}>
+          <Component {...pageProps} />
+        </Hydrate>
+      </QueryClientProvider>
     </>
   );
 }
