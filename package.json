@@ -40,7 +40,7 @@
     "zustand": "4.1.4"
   },
   "devDependencies": {
-    "@playwright/test": "1.27.1",
+    "@playwright/test": "1.29.2",
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/line-clamp": "0.4.2",
     "@testing-library/jest-dom": "5.16.5",
